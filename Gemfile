@@ -15,6 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'coffee-script-source', '1.8.0'
 
+gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
+
 
 group :development, :test do
   gem 'byebug'
@@ -33,7 +35,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ####################################################### Learn Rails #########################################################################
 
 gem 'activerecord-tableless'			# Create Rails app without database
-gem 'compass-rails', '~> 2.0.alpha.0'	# Support for Zurb foundation
+#gem 'compass-rails', '~> 2.0.alpha.0'	# Support for Zurb foundation 			# It has some issues 
 gem 'figaro'							# Configuration framework
 gem 'gibbon'							# access to MailChimp API
 gem 'google_drive'						# use Google Drive Spreadsheets for data storage
