@@ -34,7 +34,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ####################################################### Learn Rails #########################################################################
 
-gem 'activerecord-tableless'			# Create Rails app without database
+gem 'activerecord-tableless', :git => 'https://github.com/Pamplemousse/activerecord-tableless.git', :ref => 'fdc83fc11ff1982cd773c754e35cb720c5152a40'
+
+#gem 'activerecord-tableless', '~> 1.0'			# Create Rails app without database 		#It has issues with rails 4.2 or greater
 #gem 'compass-rails', '~> 2.0.alpha.0'	# Support for Zurb foundation 			# It has some issues 
 gem 'figaro'							# Configuration framework
 gem 'gibbon'							# access to MailChimp API
