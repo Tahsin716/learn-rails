@@ -9,8 +9,9 @@ def create
 	@contact = Contact.new(secure_params)
 
 	if @contact.valid?
-		# TODO save data
+		# TODO save data ; done using google spreadsheet but I did not do this part
 		# TODO send message
+		UserMailer.contact_email(@contact).deliver
 		flash[:notice] = "Message sent from #{@contact.name}."
 		redirect_to root_path
 	else
